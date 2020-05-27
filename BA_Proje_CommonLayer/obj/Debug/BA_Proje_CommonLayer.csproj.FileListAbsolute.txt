@@ -1,0 +1,15 @@
+C:\Users\Emrah Ciran\source\repos\BA_Proje\BA_Proje_CommonLayer\bin\Debug\BA_Proje_CommonLayer.dll.config
+C:\Users\Emrah Ciran\source\repos\BA_Proje\BA_Proje_CommonLayer\bin\Debug\BA_Proje_CommonLayer.dll
+C:\Users\Emrah Ciran\source\repos\BA_Proje\BA_Proje_CommonLayer\bin\Debug\BA_Proje_CommonLayer.pdb
+C:\Users\Emrah Ciran\source\repos\BA_Proje\BA_Proje_CommonLayer\bin\Debug\BA_Proje_DataLayer.dll
+C:\Users\Emrah Ciran\source\repos\BA_Proje\BA_Proje_CommonLayer\bin\Debug\EntityFramework.dll
+C:\Users\Emrah Ciran\source\repos\BA_Proje\BA_Proje_CommonLayer\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Emrah Ciran\source\repos\BA_Proje\BA_Proje_CommonLayer\bin\Debug\BA_Proje_DataLayer.pdb
+C:\Users\Emrah Ciran\source\repos\BA_Proje\BA_Proje_CommonLayer\bin\Debug\BA_Proje_DataLayer.dll.config
+C:\Users\Emrah Ciran\source\repos\BA_Proje\BA_Proje_CommonLayer\bin\Debug\EntityFramework.xml
+C:\Users\Emrah Ciran\source\repos\BA_Proje\BA_Proje_CommonLayer\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Emrah Ciran\source\repos\BA_Proje\BA_Proje_CommonLayer\obj\Debug\BA_Proje_CommonLayer.csprojAssemblyReference.cache
+C:\Users\Emrah Ciran\source\repos\BA_Proje\BA_Proje_CommonLayer\obj\Debug\BA_Proje_CommonLayer.csproj.CoreCompileInputs.cache
+C:\Users\Emrah Ciran\source\repos\BA_Proje\BA_Proje_CommonLayer\obj\Debug\BA_Proje_CommonLayer.csproj.CopyComplete
+C:\Users\Emrah Ciran\source\repos\BA_Proje\BA_Proje_CommonLayer\obj\Debug\BA_Proje_CommonLayer.dll
+C:\Users\Emrah Ciran\source\repos\BA_Proje\BA_Proje_CommonLayer\obj\Debug\BA_Proje_CommonLayer.pdb

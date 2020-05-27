@@ -1,0 +1,49 @@
+﻿@using BA_Proje_DataLayer
+@model IEnumerable<Brand>
+
+@{
+	ViewBag.Title = "List";
+	Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+
+<div class="card-header">
+	<div class="card-body">
+		@Html.ActionLink("Marka Ekle", "AddBrand")	<h2 class="card-header" style="text-align:center">Markalar</h2>
+		<table class="table">
+			<tr>
+				<th>
+					@Html.DisplayName("Marka Adı")
+				</th>
+				<th>
+					@Html.DisplayName("Marka Resmi")
+				</th>
+		
+
+				<th></th>
+			</tr>
+			@foreach (Brand item in Model)
+			{
+			<tr>
+				<td class="jsgrid-cell">
+					@Html.DisplayFor(modelItem => item.BrandName)
+
+				</td>
+				<td class="jsgrid-cell">
+					
+				<img src="~/Upload/@item.BrandPhoto" class="img-circle" style="width:100px; height:100px" />
+				</td>
+				<td>
+					@Html.ActionLink("Edit", "Edit", new { id = item.BrandID }) |
+
+					@Html.ActionLink("Delete", "Delete", new { id = item.BrandID }, new { onclick = "return confirm('Silmek İstediğinize Emin Misiniz?');" })
+				</td>
+			</tr>
+			}
+		</table>
+	
+
+	</div>
+
+</div>
+

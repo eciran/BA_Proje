@@ -1,0 +1,12 @@
+C:\Users\Emrah Ciran\source\repos\BA_Proje\BA_Proje_DataLayer\bin\Debug\BA_Proje_DataLayer.dll.config
+C:\Users\Emrah Ciran\source\repos\BA_Proje\BA_Proje_DataLayer\bin\Debug\BA_Proje_DataLayer.dll
+C:\Users\Emrah Ciran\source\repos\BA_Proje\BA_Proje_DataLayer\bin\Debug\BA_Proje_DataLayer.pdb
+C:\Users\Emrah Ciran\source\repos\BA_Proje\BA_Proje_DataLayer\bin\Debug\EntityFramework.dll
+C:\Users\Emrah Ciran\source\repos\BA_Proje\BA_Proje_DataLayer\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Emrah Ciran\source\repos\BA_Proje\BA_Proje_DataLayer\bin\Debug\EntityFramework.xml
+C:\Users\Emrah Ciran\source\repos\BA_Proje\BA_Proje_DataLayer\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Emrah Ciran\source\repos\BA_Proje\BA_Proje_DataLayer\obj\Debug\BA_Proje_DataLayer.csprojAssemblyReference.cache
+C:\Users\Emrah Ciran\source\repos\BA_Proje\BA_Proje_DataLayer\obj\Debug\BA_Proje_DataLayer.csproj.CoreCompileInputs.cache
+C:\Users\Emrah Ciran\source\repos\BA_Proje\BA_Proje_DataLayer\obj\Debug\BA_Proje_DataLayer.csproj.CopyComplete
+C:\Users\Emrah Ciran\source\repos\BA_Proje\BA_Proje_DataLayer\obj\Debug\BA_Proje_DataLayer.dll
+C:\Users\Emrah Ciran\source\repos\BA_Proje\BA_Proje_DataLayer\obj\Debug\BA_Proje_DataLayer.pdb

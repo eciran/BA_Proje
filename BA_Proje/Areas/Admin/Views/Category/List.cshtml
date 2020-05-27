@@ -1,0 +1,45 @@
+﻿@model IEnumerable<BA_Proje_DataLayer.Category>
+
+@{
+	ViewBag.Title = "List";
+	Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+
+<div class="card-header">
+	<div class="card-body">
+		@Html.ActionLink("Kategori Ekle", "AddCategory")	<h2 class="card-header" style="text-align:center">Kategori Listesi</h2>
+		<table class="table">
+			<tr>
+				<th>
+					@Html.DisplayName("Kategori Adı")
+				</th>
+				<th>
+					@Html.DisplayName("Kategori Açıklaması")
+				</th>
+
+				<th></th>
+			</tr>
+			@foreach (var item in Model)
+			{
+				<tr>
+					<td class="jsgrid-cell">
+						@Html.DisplayFor(modelItem => item.CategoryName)
+
+					</td>
+					<td class="jsgrid-cell">
+						@Html.DisplayFor(modelItem => item.CategoryDesc)
+					</td>
+					<td>
+						@Html.ActionLink("Edit", "Edit", new { id = item.CategoryID }) |
+
+						@Html.ActionLink("Delete", "Delete", new { id = item.CategoryID }, new { onclick = "return confirm('Silmek İstediğinize Emin Misiniz?');" })
+					</td>
+				</tr>
+			}
+		</table>
+		<div>	</div>
+
+	</div>
+
+</div>

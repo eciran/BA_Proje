@@ -1,0 +1,47 @@
+﻿@model BA_Proje_DataLayer.Brand
+@{
+	ViewBag.Title = "Edit";
+	Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+@using (Html.BeginForm("AddBrand", "Brand", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+	@Html.AntiForgeryToken()
+
+	<div class="card-header">
+		<div class="card-body">
+			@Html.ActionLink("Marka Ekle", "AddBrand")
+			<h2 style="text-align:center">Marka Düzenle</h2>
+			<hr />
+			@Html.ValidationSummary(true, "", new { @class = "text-danger" })
+			@Html.HiddenFor(model => model.BrandID)
+			@Html.HiddenFor(model => model.BrandPhoto)
+
+
+			<div class="form-group">
+				@Html.LabelFor(model => model.BrandName, htmlAttributes: new { @class = "control-label col-md-2" })
+				<div class="col-md-10">
+					@Html.EditorFor(model => model.BrandName, new { htmlAttributes = new { @class = "form-control" } })
+					@Html.ValidationMessageFor(model => model.BrandName, "", new { @class = "text-danger" })
+				</div>
+			</div>
+
+			<div class="form-group">
+				@Html.LabelFor(model => model.BrandPhoto, htmlAttributes: new { @class = "control-label col-md-2" })
+				<div class="col-md-10">
+					<img src="~/Upload/@Model.BrandPhoto" width="100" height="100" />
+					<input type="file" name="PhotoPath" id="PhotoPath" />
+					@Html.ValidationMessageFor(model => model.BrandPhoto, "", new { @class = "text-danger" })
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="col-md-offset-2 col-md-10">
+					<input type="submit" value="Değişikliği Kaydet" class="btn btn-primary" />
+				</div>
+				<div style="margin:10px 0 0 10px">@Html.ActionLink("Marka Listesine Git", "List")</div>
+
+			</div>
+		</div>
+	</div>
+
+}
