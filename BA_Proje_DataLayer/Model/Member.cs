@@ -15,16 +15,16 @@ namespace BA_Proje_DataLayer
 		[Required]
 		public int MemberID { get; set; }
 		[Column("Isim")]
-		[Required]
+		[Required(ErrorMessage = "Lütfen İsim Giriniz")]
 		public string FirstName { get; set; }
 		[Column("Soyisim")]
-		[Required]
+		[Required(ErrorMessage = "Lütfen Soyisim Giriniz")]
 		public string LastName { get; set; }
 		[Column("Kayit Tarihi")]
 		public DateTime? CreatedDate { get; set; }
 		[Required]
 		public string Email { get; set; }
-		[Required]
+		[Required(ErrorMessage = "Email Alanı Boş Olamaz")]
 		[Column("Sifre")]
 		[MaxLength(40), MinLength(5)]
 		public string Password { get; set; }
@@ -34,7 +34,7 @@ namespace BA_Proje_DataLayer
 		public string Address { get; set; }
 
 
-		public virtual UserRole RoleID { get; set; }
+		public virtual UserRole UserRole { get; set; }
 
 	}
 }

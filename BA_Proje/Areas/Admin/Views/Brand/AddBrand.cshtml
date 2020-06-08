@@ -7,9 +7,6 @@
 
 <div class="card-header">
 	<div class="card-body">
-
-
-
 		@using (Html.BeginForm("AddBrand", "Brand", FormMethod.Post, new { enctype = "multipart/form-data" }))
 		{
 			@Html.AntiForgeryToken()
@@ -27,7 +24,7 @@
 				</div>
 
 				<div class="form-group">
-					@Html.LabelFor(model => model,"Marka Resmi", htmlAttributes: new { @class = "control-label col-md-3" })
+					@Html.LabelFor(model => model, "Marka Resmi", htmlAttributes: new { @class = "control-label col-md-3" })
 					<div class="col-md-12">
 						<input type="file" name="photoPath" id="photoPath" />
 						@Html.ValidationMessageFor(model => model.BrandPhoto, "", new { @class = "text-danger" })

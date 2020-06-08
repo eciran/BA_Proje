@@ -74,7 +74,7 @@
 	with font-awesome or any other icon font library -->
 						<li class="nav-item">
 							<a href="~/Admin/Home/AdminIndex" class="nav-link active">
-								<i class="nav-icon fas fa-tachometer-alt"></i>
+								<i class="nav-icon fas fa-home"></i>
 								<p>
 									Ana Sayfa
 									<i class="right fas fa-angle-left"></i>
@@ -129,6 +129,75 @@
 								</li>
 							</ul>
 						</li>
+						<li class="nav-item has-treeview">
+							<a href="#" class="nav-link">
+								<i class="nav-icon fas fa-cookie-bite"></i>
+								<p>
+									Ürünler
+									<i class="right fas fa-angle-left"></i>
+								</p>
+							</a>
+							<ul class="nav nav-treeview">
+								<li class="nav-item">
+									<a href="~/Admin/Product/AddProduct" class="nav-link">
+										<i class="far fa-circle nav-icon"></i>
+										<p>Ürün Ekle</p>
+									</a>
+								</li>
+								<li class="nav-item">
+									<a href="~/Admin/Product/List" class="nav-link">
+										<i class="far fa-circle nav-icon"></i>
+										<p>Ürün Listesi</p>
+									</a>
+								</li>
+							</ul>
+						</li>
+						<li class="nav-item has-treeview">
+							<a href="#" class="nav-link">
+								<i class="nav-icon fas fa-bus"></i>
+								<p>
+									Kargolar
+									<i class="right fas fa-angle-left"></i>
+								</p>
+							</a>
+							<ul class="nav nav-treeview">
+								<li class="nav-item">
+									<a href="~/Admin/Shipping/AddShip" class="nav-link">
+										<i class="far fa-circle nav-icon"></i>
+										<p>Kargo Ekle</p>
+									</a>
+								</li>
+								<li class="nav-item">
+									<a href="~/Admin/Shipping/List" class="nav-link">
+										<i class="far fa-circle nav-icon"></i>
+										<p>Kargo Listesi</p>
+									</a>
+								</li>
+							</ul>
+						</li>
+						<li class="nav-item has-treeview">
+							<a href="#" class="nav-link">
+								<i class="nav-icon fas fa-people-arrows"></i>
+								<p>
+									Üyeler
+									<i class="right fas fa-angle-left"></i>
+								</p>
+							</a>
+							<ul class="nav nav-treeview">
+								<li class="nav-item">
+									<a href="~/Admin/Members/Create" class="nav-link">
+										<i class="far fa-circle nav-icon"></i>
+										<p>Üye Ekle</p>
+									</a>
+								</li>
+								<li class="nav-item">
+									<a href="~/Admin/Members/Index" class="nav-link">
+										<i class="far fa-circle nav-icon"></i>
+										<p>Üye Listesi</p>
+									</a>
+								</li>
+							</ul>
+						</li>
 					</ul>
 				</nav>
 				<!-- /.sidebar-menu -->
@@ -146,7 +215,7 @@
 
 		<!-- /.content-wrapper -->
 		<footer class="main-footer">
-					<strong>Copyright &copy; @DateTime.Now.Year Ofis Kırtasiye Dijital Baskı Reklam Hizmetleri</strong>
+			<strong> &copy;@DateTime.Now.Year Ofis Kırtasiye Dijital Baskı Reklam Hizmetleri</strong>
 			Tüm Hakları Saklıdır.
 				<div class="float-right d-sm-inline-block">
 				Design by | <b>Emrah CİRAN</b>
@@ -164,9 +233,6 @@
 	<!-- jQuery UI 1.11.4 -->
 	<link href="~/Content/AdminLTE-master/plugins/jquery-ui/jquery-ui.min.css" rel="stylesheet" />
 	<!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
-	<script>
-			$.widget.bridge('uibutton', $.ui.button)
-		</script>
 	<!-- Bootstrap 4 -->
 	<script src="~/Content/AdminLTE-master/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
 	<!-- ChartJS -->

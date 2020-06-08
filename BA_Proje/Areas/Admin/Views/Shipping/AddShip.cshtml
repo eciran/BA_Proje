@@ -1,0 +1,46 @@
+﻿@model BA_Proje_DataLayer.Shipping
+
+@{
+	ViewBag.Title = "AddShip";
+	Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+<div class="card-header">
+	<div class="card-body">
+		@using (Html.BeginForm("AddShip", "Shipping", FormMethod.Post, new { enctype = "multipart/form-data" }))
+		{
+			@Html.AntiForgeryToken()
+
+			<div class="form-horizontal">
+				<h2 style="text-align:center">Kargo Ekle</h2>
+				<hr />
+				@Html.ValidationSummary(true, "", new { @class = "text-danger" })
+				<div class="form-group">
+					@Html.LabelFor(model => model, "Kargo Adı", htmlAttributes: new { @class = "control-label col-md-12" })
+					<div class="col-md-12">
+						@Html.EditorFor(model => model.ShippingName, new { htmlAttributes = new { @class = "form-control", @required = "required" } })
+						@Html.ValidationMessageFor(model => model.ShippingName, "", new { @class = "text-danger" })
+					</div>
+				</div>
+
+				<div class="form-group">
+					@Html.LabelFor(model => model, "Kargo Telefonu", htmlAttributes: new { @class = "control-label col-md-3" })
+					<div class="col-md-12">
+						@Html.EditorFor(model => model.ShipPhone, new { htmlAttributes = new { @class = "form-control", @required = "required" } })
+						@Html.ValidationMessageFor(model => model.ShipPhone, "", new { @class = "text-danger" })
+					</div>
+				</div>
+				<div class="form-group">
+					<div class="col-md-offset-2 col-md-10">
+						<input type="submit" value="Ekle" class="btn btn-primary" />
+					</div>
+				</div>
+			</div>
+
+		}
+
+		<div>
+			@Html.ActionLink("Kargo Listesine Git", "List")
+		</div>
+	</div>
+</div>

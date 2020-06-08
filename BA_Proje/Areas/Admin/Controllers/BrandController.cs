@@ -15,6 +15,8 @@ namespace BA_Proje.Areas.Admin.Controllers
 		InstanceResult<Brand> res = new InstanceResult<Brand>();
 
 		// GET: Admin/Brand
+
+		
 		public ActionResult AddBrand()
 		{
 			Brand marka = new Brand();

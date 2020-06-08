@@ -14,23 +14,22 @@ namespace BA_Proje_DataLayer
 		[Required]
 		[Column("ID")]
 		public int ProductID { get; set; }
-		[Required]
+		[Required(ErrorMessage = "Lütfen Ürün Adı Giriniz")]
 		[MaxLength(40, ErrorMessage = "Ürün ismi maksimum 40 karakter olabilir"), MinLength(3, ErrorMessage = "Ürün ismi minumum 3 karakter olabilir")]
 		[Column("Name")]
 		public string ProductName { get; set; }
-		[Required]
+		[Required(ErrorMessage = "Lütfen Stok Belirtiniz")]
 		[Column("Stok")]
 		[Range(0, Int32.MaxValue,ErrorMessage = "Stok Değeri 0'dan Kücük Olamaz")]
 		public int Stock { get; set; }
-		[Required]
+		[Required(ErrorMessage = "Lütfen Ürün Fiyatı Giriniz")]
 		[Column("Fiyat")]
 		[Range(0,Double.MaxValue,ErrorMessage ="Fiyat 0'dan Kücük Olamaz")]
 		public int Price { get; set; }
-		[Required]
+		[Required(ErrorMessage = "Lütfen Açıklama Giriniz")]
 		[MaxLength(50, ErrorMessage = "Ürün acıklaması maksimum 50 karakter olabilir"), MinLength(3, ErrorMessage = "Ürün acıklaması minumum 3 karakter olabilir")]
 		[Column("UrunAçiklama")]
 		public string Description { get; set; }
-		[Required]
 		[Column("UrunFoto")]
 		public string Photo { get; set; }
 

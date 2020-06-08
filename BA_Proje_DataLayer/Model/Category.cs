@@ -13,7 +13,7 @@ namespace BA_Proje_DataLayer
 		[Key]
 		[Required]
 		public int CategoryID { get; set; }
-		[Required]
+		[Required(ErrorMessage ="Lütfen Kategori Adı Giriniz")]
 		[MaxLength(40, ErrorMessage = "Kategoryi ismi maksimum 40 karakter olabilir"), MinLength(3, ErrorMessage = "Kategori ismi minumum 3 karakter olabilir")]
 		[Column(name: "KategoriAdı")]
 		public string CategoryName { get; set; }

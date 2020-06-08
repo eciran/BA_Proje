@@ -1,0 +1,77 @@
+﻿@model IEnumerable<BA_Proje_DataLayer.Product>
+
+
+@{
+	ViewBag.Title = "List";
+	Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+<div class="card-header">
+	<div class="card-body">
+		@Html.ActionLink("Ürün Ekle", "AddProduct")
+		<h2 class="card-header" style="text-align:center">Ürün Listesi</h2>
+		<table  class="table">
+			<tr>
+				<th>
+					@Html.DisplayName("Ürün Adı")
+				</th>
+				<th>
+					@Html.DisplayName("Ürün Açıklaması")
+				</th>
+				<th>
+					@Html.DisplayName("Ürün Fiyatı")
+				</th>
+				<th>
+					@Html.DisplayName("Stok")
+				</th>
+				<th>
+					@Html.DisplayName("Marka")
+				</th>
+					<th>
+					@Html.DisplayName("Kategori")
+				</th>
+				<th>
+					@Html.DisplayName("Ürün Foto")
+				</th>
+		
+				<th></th>
+			</tr>
+			@foreach (var item in Model)
+			{
+			<tr>
+				<td class="jsgrid">
+					@Html.DisplayFor(modelitem => item.ProductName)
+				</td>
+				<td class="jsgrid">
+					@Html.DisplayFor(modelItem => item.Description)
+				</td>
+				<td class="jsgrid">
+					@Html.DisplayFor(modelItem => item.Price)
+				</td>
+				<td class="jsgrid">
+					@Html.DisplayFor(modelItem => item.Stock)
+				</td>
+				<td class="jsgrid">
+					@Html.DisplayFor(modelItem => item.Brand.BrandName)
+				</td>
+				<td class="jsgrid">
+					@Html.DisplayFor(modelItem => item.Category.CategoryName)
+				</td>
+				<td class="jsgrid">
+					<img src="~/Upload/@item.Photo" width="100" height="100" class="img-circle "	 />
+				</td>
+				<td>
+					@Html.ActionLink("Edit", "Edit", new { id = item.ProductID }) |
+
+					@Html.ActionLink("Delete", "Delete", new { id = item.ProductID }, new { onclick = "return confirm('Silmek İstediğinize Emin Misiniz?');" })
+				</td>
+			</tr>
+			}
+		</table>
+		<div>	</div>
+
+	</div>
+
+</div>
+
+

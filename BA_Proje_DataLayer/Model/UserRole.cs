@@ -15,7 +15,7 @@ namespace BA_Proje_DataLayer
 		[Required]
 		[Column("ID")]
 		public int RoleID { get; set; }
-		[Required]
+		[Required(ErrorMessage = "Bu Alan Boş Bırakılamaz")]
 		[Column("Name")]
 		public string RoleName { get; set; }
 

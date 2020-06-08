@@ -24,7 +24,7 @@ namespace BA_Proje.Areas.Admin.Controllers
 		{
 			res.resint= cr.Insert(model);
 			ViewBag.Mesaj = res.resint.ReturnMessage;
-			return RedirectToAction("List");
+			return View();
 		}
 		public ActionResult List()
 		{

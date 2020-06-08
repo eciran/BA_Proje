@@ -9,6 +9,6 @@ namespace BA_Proje_DataLayer.Context
 {
 	public class NTierContext : DbContext
 	{
-		
+
 	}
 }

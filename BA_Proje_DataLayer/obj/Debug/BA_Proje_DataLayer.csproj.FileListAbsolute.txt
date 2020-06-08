@@ -10,3 +10,5 @@ C:\Users\Emrah Ciran\source\repos\BA_Proje\BA_Proje_DataLayer\obj\Debug\BA_Proje
 C:\Users\Emrah Ciran\source\repos\BA_Proje\BA_Proje_DataLayer\obj\Debug\BA_Proje_DataLayer.csproj.CopyComplete
 C:\Users\Emrah Ciran\source\repos\BA_Proje\BA_Proje_DataLayer\obj\Debug\BA_Proje_DataLayer.dll
 C:\Users\Emrah Ciran\source\repos\BA_Proje\BA_Proje_DataLayer\obj\Debug\BA_Proje_DataLayer.pdb
+C:\Users\Emrah Ciran\source\repos\BA_Proje\BA_Proje_DataLayer\obj\Debug\BA_Proje_DataLayer.Migrations.ProductMig.resources
+C:\Users\Emrah Ciran\source\repos\BA_Proje\BA_Proje_DataLayer\obj\Debug\BA_Proje_DataLayer.csproj.GenerateResource.cache

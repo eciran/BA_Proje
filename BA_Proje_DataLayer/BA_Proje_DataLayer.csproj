@@ -53,6 +53,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Context\NTierContext.cs" />
+    <Compile Include="Migrations\202005271304445_Product-Mig.cs" />
+    <Compile Include="Migrations\202005271304445_Product-Mig.designer.cs">
+      <DependentUpon>202005271304445_Product-Mig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Model\Brand.cs" />
     <Compile Include="Model\Category.cs" />
     <Compile Include="Model\Invoice.cs" />
@@ -69,6 +75,11 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202005271304445_Product-Mig.resx">
+      <DependentUpon>202005271304445_Product-Mig.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

@@ -13,7 +13,7 @@ namespace BA_Proje_DataLayer
 		[Key]
 		[Required]
 		public int BrandID { get; set; }
-		[Required]
+		[Required(ErrorMessage ="Lütfen Marka İsmi Giriniz")]
 		[MaxLength(40, ErrorMessage = "Marka ismi maksimum 40 karakter olabilir"), MinLength(3, ErrorMessage = "Marka ismi minumum 3 karakter olabilir")]
 		[Column("Name")]
 		public string BrandName { get; set; }
